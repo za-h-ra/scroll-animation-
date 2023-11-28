@@ -12,46 +12,32 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: linear-gradient(45deg, #485563, #000000, #434343, #29323c);
-  background-size: 300% 300%;
-  animation: bg-color 12s ease-in-out infinite;
+  background: linear-gradient(45deg, #000000, #434343);
 }
 
 h1 {
   margin: 10px;
 }
 
-.box {
-  background-color: #3a6073;
+.star-element {
+  background-color: #000000;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  height: 100px;
   width: 400px;
-  height: 200px;
-  margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(200%);
+  transform: translateX(300%);
   transition: transform 0.4s ease;
 }
 
-.box:nth-of-type(even) {
-  transform: translateX(-200%);
+.star-element:nth-of-type(even) {
+  transform: translateX(-300%);
 }
 
-.box.show {
+.star-element.show {
   transform: translateX(0);
-}
-
-/* BACKGROUND GRADIENT ANIMATION */
-@keyframes bg-color {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }
